@@ -20,9 +20,7 @@ const Verification = () => {
       />
     </div>
   );
-  {
-    console.log(data);
-  }
+ 
   return content;
 };
 export default Verification;
