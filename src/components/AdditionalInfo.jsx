@@ -66,9 +66,7 @@ const AdditionalInfo = () => {
       />
     </>
   );
-  {
-    console.log(data);
-  }
+  
   return content;
 };
 export default AdditionalInfo;
