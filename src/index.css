@@ -53,6 +53,7 @@ button,
 textarea,
 select {
   font: inherit;
+   -webkit-appearance: none;
 }
 
 #root {
