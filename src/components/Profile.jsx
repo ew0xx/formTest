@@ -13,10 +13,8 @@ const Profile = () => {
           value={data.f_country}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+          <option hidden>Please Select</option>
+
           <option value="Afghanistan">Afghanistan</option>
           <option value="Åland Islands">Åland Islands</option>
           <option value="Albania">Albania</option>
