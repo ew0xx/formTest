@@ -14,9 +14,7 @@ const Employment = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+        
           <option value="student">Student</option>
           <option value="employed">Employed</option>
           <option value="self-employed">Self-employed</option>
@@ -34,9 +32,7 @@ const Employment = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+         
           <option value="student">Owner</option>
           <option value="employed">Employee</option>
           <option value="self-employed">Manager</option>
@@ -55,9 +51,7 @@ const Employment = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+         
           <option value="Financial Services">Financial Services</option>
           <option value="Legal">Legal</option>
           <option value="Public Sector">Public sector</option>
@@ -93,9 +87,7 @@ const Employment = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+         
           <option value="$10,000 or Less">$10,000 or Less</option>
           <option value="$10,001 - $49,999">$10,001 - $49,999</option>
           <option value="$50,000 - $99,999">$50,000 - $99,999</option>
@@ -138,9 +130,7 @@ const Employment = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+        
           <option value="$10,000 or Less">$10,000 or Less</option>
           <option value="$10,001 - $49,999">$10,001 - $49,999</option>
           <option value="$50,000 - $99,999">$50,000 - $99,999</option>
@@ -161,9 +151,7 @@ const Employment = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+          
           <option value="Hedging">Hedging</option>
           <option value="Speculation">Speculation</option>
           <option value="Risk Management">Risk Management</option>
@@ -182,9 +170,7 @@ const Employment = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
-          <option disabled="disabled" default="true">
-            Please Select
-          </option>
+         
           <option value="High">
             High : I accept a high degree of volatility and possibly losses of
             my initial investment amount.
