@@ -15,7 +15,7 @@ const Verification = () => {
         type="file"
         id="photoId"
         name="si_photoId"
-        value={data.si_photoId}
+        
         onChange={handleChange}
       />
     </div>
