@@ -202,9 +202,7 @@ const Employment = () => {
       </div>
     </div>
   );
-  {
-    console.log(data);
-  }
+ 
   return content;
 };
 export default Employment;
