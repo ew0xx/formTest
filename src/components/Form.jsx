@@ -34,7 +34,7 @@ const Form = () => {
     );
   };
 
-  console.log(data);
+  
   const content = (
     <form className="form flex-col" onSubmit={handleSubmit}>
       <header className="form-header">
