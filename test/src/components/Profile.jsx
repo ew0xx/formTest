@@ -5,7 +5,7 @@ const Profile = () => {
 
   const content = (
     <div className="flex-col">
-      <div className="flex-col ">
+      <div className="flex-col">
         <label htmlFor="billState">Country of Residence</label>
         <select
           id="country"
@@ -14,6 +14,9 @@ const Profile = () => {
           onChange={handleChange}
         >
           <option hidden="true">Please Select</option>
+          <option disabled="disabled" default="true">
+            Please Select
+          </option>
           <option value="Afghanistan">Afghanistan</option>
           <option value="Åland Islands">Åland Islands</option>
           <option value="Albania">Albania</option>
@@ -358,7 +361,9 @@ const Profile = () => {
       />
     </div>
   );
-
+  {
+    console.log(data);
+  }
   return content;
 };
 export default Profile;
