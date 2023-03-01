@@ -20,7 +20,7 @@ const Employment = () => {
           value={data.t_employment}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
+          <option hidden>Please Select</option>
           <option value="student">Student</option>
           <option value="employed">Employed</option>
           <option value="self-employed">Self-employed</option>
@@ -37,7 +37,7 @@ const Employment = () => {
           value={data.t_position}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
+          <option hidden>Please Select</option>
           <option value="student">Owner</option>
           <option value="employed">Employee</option>
           <option value="self-employed">Manager</option>
@@ -55,7 +55,7 @@ const Employment = () => {
           value={data.t_industry}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
+          <option hidden>Please Select</option>
           <option value="Financial Services">Financial Services</option>
           <option value="Legal">Legal</option>
           <option value="Public Sector">Public sector</option>
@@ -90,7 +90,7 @@ const Employment = () => {
           value={data.t_income}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
+          <option hidden>Please Select</option>
           <option value="$10,000 or Less">$10,000 or Less</option>
           <option value="$10,001 - $49,999">$10,001 - $49,999</option>
           <option value="$50,000 - $99,999">$50,000 - $99,999</option>
@@ -110,7 +110,7 @@ const Employment = () => {
           value={data.t_fundSource}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
+          <option hidden>Please Select</option>
           <option value="Employment">Employment</option>
           <option value="Inheritance">Inheritance</option>
           <option value="Saving & Investments">Saving & Investments</option>
@@ -129,7 +129,7 @@ const Employment = () => {
           value={data.t_savings}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
+          <option hidden>Please Select</option>
           <option value="$10,000 or Less">$10,000 or Less</option>
           <option value="$10,001 - $49,999">$10,001 - $49,999</option>
           <option value="$50,000 - $99,999">$50,000 - $99,999</option>
@@ -149,7 +149,7 @@ const Employment = () => {
           value={data.t_tradingObjective}
           onChange={handleChange}
         >
-          <option hidden="true">Please Select</option>
+          <option hidden>Please Select</option>
           <option value="Hedging">Hedging</option>
           <option value="Speculation">Speculation</option>
           <option value="Risk Management">Risk Management</option>

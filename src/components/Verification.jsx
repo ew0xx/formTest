@@ -36,13 +36,17 @@ const Verification = () => {
         )}
       </div>
       <label htmlFor="photoId">Goverment Photo ID</label>
-      <button value={photo} onClick={() => widgetRef.current.open()}>
+      <button
+        type="button"
+        value={photo}
+        onClick={() => widgetRef.current.open()}
+      >
         Upload
       </button>
     </div>
   );
   {
-    console.log(photo);
+    console.log(data);
   }
   return content;
 };

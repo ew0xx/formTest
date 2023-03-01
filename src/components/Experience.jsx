@@ -95,7 +95,7 @@ const Experience = () => {
                 : "questionButton"
             }
             name="fo_tradingTime"
-            value="questionOneA"
+            value="More than 2 years"
             onClick={handleClick}
           >
             More than 2 years
