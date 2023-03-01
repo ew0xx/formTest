@@ -5,7 +5,7 @@ const AdditionalInfo = () => {
   const { data, handleChange } = useFormContext();
 
   const content = (
-    <>
+    <div className="flex-col">
       <div className="flex-col">
         <label htmlFor="buildingNumber">Building number (optional)</label>
         <input
@@ -64,9 +64,9 @@ const AdditionalInfo = () => {
         value={data.s_state}
         onChange={handleChange}
       />
-    </>
+    </div>
   );
-  
+
   return content;
 };
 export default AdditionalInfo;

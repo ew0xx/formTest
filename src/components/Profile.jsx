@@ -5,7 +5,7 @@ const Profile = () => {
 
   const content = (
     <div className="flex-col">
-      <div className="flex-col">
+      <div className="flex-col ">
         <label htmlFor="billState">Country of Residence</label>
         <select
           id="country"
@@ -13,8 +13,7 @@ const Profile = () => {
           value={data.f_country}
           onChange={handleChange}
         >
-          <option hidden>Please Select</option>
-
+          <option hidden="true">Please Select</option>
           <option value="Afghanistan">Afghanistan</option>
           <option value="Åland Islands">Åland Islands</option>
           <option value="Albania">Albania</option>
@@ -359,7 +358,7 @@ const Profile = () => {
       />
     </div>
   );
- 
+
   return content;
 };
 export default Profile;

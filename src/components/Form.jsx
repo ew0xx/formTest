@@ -33,8 +33,6 @@ const Form = () => {
       }
     );
   };
-
-  
   const content = (
     <form className="form flex-col" onSubmit={handleSubmit}>
       <header className="form-header">

@@ -48,18 +48,14 @@ p {
   padding-bottom: 10px;
   font-size: 12px;
 }
+span {
+  font-weight: 14px;
+}
 input,
 button,
 textarea,
 select {
   font: inherit;
-   -webkit-appearance: none;
-}
-input[type="date"]
-{
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    min-height: 1.2em;
 }
 
 #root {
@@ -215,6 +211,21 @@ ul {
 }
 .error {
   border: 1px solid red;
+}
+.riskWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.riskContainer {
+  background-color: rgba(211, 211, 211, 0.279);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.full-width {
+  width: 100%;
+}
+.right {
+  padding: 10px;
 }
 @media (max-width: 768px) {
   form {

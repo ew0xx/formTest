@@ -18,7 +18,6 @@ const Experience = () => {
     fo_profession: data.fo_profession,
     fo_knowledge: data.fo_knowledge,
   });
-  
   const handleClick = (e) => {
     e.preventDefault();
     const name = e.target.name;
@@ -422,7 +421,7 @@ const Experience = () => {
       )}
     </div>
   );
-  
+
   return content;
 };
 export default Experience;

@@ -2,13 +2,18 @@ import useFormContext from "../hooks/useFormContext";
 import React, { useState } from "react";
 const Appropriateness = () => {
   const { data, handleChange } = useFormContext();
-  const [answer, setAnswer] = useState({});
+  const [answer, setAnswer] = useState({
+    fi_questionOne: data.fi_questionOne,
+    fi_questionTwo: data.fi_questionTwo,
+    fi_questionThree: data.fi_questionThree,
+    fi_questionFour: data.fi_questionFour,
+  });
 
   const handleClick = (e) => {
     e.preventDefault();
     const name = e.target.name;
-    const id = e.target.id;
-    setAnswer((prev) => ({ ...prev, [name]: id }));
+    const value = e.target.value;
+    setAnswer((prev) => ({ ...prev, [name]: value }));
   };
 
   const content = (
@@ -16,7 +21,7 @@ const Appropriateness = () => {
       <div
         className="flex-col"
         id="questionOne"
-        name="questionOne"
+        name="fi_questionOne"
         onClick={handleChange}
       >
         <label htmlFor="questionOne">What is market vlotility?</label>
@@ -24,38 +29,38 @@ const Appropriateness = () => {
           type="button"
           id="questionOneA"
           className={
-            answer.fi_questionOne === "questionOneA"
+            answer.fi_questionOne === "optionA"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionOne"
           onClick={handleClick}
-          value="When there is little or no movement in price over a period of time"
+          value="optionA"
         >
           When there is little or no movement in price over a period of time
         </button>
         <button
           id="questionOneB"
           className={
-            answer.fi_questionOne === "questionOneB"
+            answer.fi_questionOne === "optionB"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionOne"
           onClick={handleClick}
-          value="When there are large movements in price over a short period of time"
+          value="optionB"
         >
           When there are large movements in price over a short period of time
         </button>
         <button
           id="questionOneC"
           className={
-            answer.fi_questionOne === "questionOneC"
+            answer.fi_questionOne === "optionC"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionOne"
-          value="Volatility is a measure of how much profit you will make on a trade"
+          value="optionC"
           onClick={handleClick}
         >
           Volatility is a measure of how much profit you will make on a trade
@@ -73,12 +78,12 @@ const Appropriateness = () => {
         <button
           id="questionTwoA"
           className={
-            answer.fi_questionTwo === "questionTwoA"
+            answer.fi_questionTwo === "optionA"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionTwo"
-          value="Equity is your account balance plus the floating profit (or loss) of all your open positions."
+          value="optionA"
           onClick={handleClick}
         >
           Equity is your account balance plus the floating profit (or loss) of
@@ -87,13 +92,13 @@ const Appropriateness = () => {
         <button
           id="questionTwoB"
           className={
-            answer.fi_questionTwo === "questionTwoB"
+            answer.fi_questionTwo === "optionB"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionTwo"
           onClick={handleClick}
-          value="Equity is the TOTAL amount of margin currently in use to maintain all open positions."
+          value="optionB"
         >
           Equity is the TOTAL amount of margin currently in use to maintain all
           open positions.
@@ -101,13 +106,13 @@ const Appropriateness = () => {
         <button
           id="questionTwoC"
           className={
-            answer.fi_questionTwo === "questionTwoC"
+            answer.fi_questionTwo === "optionC"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionTwo"
           onClick={handleClick}
-          value="Equity is the gap between the bid and the ask price"
+          value="optionC"
         >
           Equity is the gap between the bid and the ask price
         </button>
@@ -122,39 +127,39 @@ const Appropriateness = () => {
         <button
           id="questionThreeA"
           className={
-            answer.fi_questionThree === "questionThreeA"
+            answer.fi_questionThree === "optionA"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionThree"
           onClick={handleClick}
-          value="The profit from a trade"
+          value="optionA"
         >
           The profit from a trade
         </button>
         <button
           id="questionThreeB"
           className={
-            answer.fi_questionThree === "questionThreeB"
+            answer.fi_questionThree === "optionB"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionThree"
           onClick={handleClick}
-          value="The loss from a trade"
+          value="optionB"
         >
           The loss from a trade
         </button>
         <button
           id="questionThreeC"
           className={
-            answer.fi_questionThree === "questionThreeC"
+            answer.fi_questionThree === "optionC"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionThree"
           onClick={handleClick}
-          value="The difference between the bid and the ask price"
+          value="optionC"
         >
           The difference between the bid and the ask price
         </button>
@@ -172,39 +177,39 @@ const Appropriateness = () => {
         <button
           id="questionFourA"
           className={
-            answer.fi_questionFour === "questionFourA"
+            answer.fi_questionFour === "optionA"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionFour"
           onClick={handleClick}
-          value="Vlc Capital's risk team"
+          value="optionA"
         >
           Vlc Capital&#39;s risk team
         </button>
         <button
           id="questionFourB"
           className={
-            answer.fi_questionFour === "questionFourB"
+            answer.fi_questionFour === "optionB"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionFour"
           onClick={handleClick}
-          value="It is my responsilibity to monitor and manage my trading account"
+          value="optionB"
         >
           It is my responsilibity to monitor and manage my trading account
         </button>
         <button
           id="questionFourC"
           className={
-            answer.fi_questionFour === "questionFourC"
+            answer.fi_questionFour === "optionC"
               ? "questionButton active"
               : "questionButton"
           }
           name="fi_questionFour"
           onClick={handleClick}
-          value="My trading account does not require management or monitoring"
+          value="optionC"
         >
           My trading account does not require management or monitoring
         </button>
