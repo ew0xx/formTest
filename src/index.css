@@ -152,6 +152,7 @@ label {
 input,
 select,
 textarea {
+  -webkit-appearance: none;
   background-color: #f8f8f8;
   border: none;
   outline: 1px solid rgb(216, 216, 216);
