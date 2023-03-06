@@ -6,7 +6,7 @@ const Verification = () => {
   const cloudinaryRef = useRef();
   const widgetRef = useRef();
   const [photo, setPhoto] = useState("");
-  const { data } = useFormContext();
+  const { data, handleChange } = useFormContext();
 
   useEffect(() => {
     cloudinaryRef.current = window.cloudinary;
@@ -35,14 +35,31 @@ const Verification = () => {
           <img src={card} width="200px" />
         )}
       </div>
-      <label htmlFor="photoId">Goverment Photo ID</label>
-      <button
-        type="button"
-        value={photo}
-        onClick={() => widgetRef.current.open()}
-      >
-        Upload
-      </button>
+      <div name="si_photoId">
+        <label htmlFor="photoId">Goverment Photo ID</label>
+        <button
+          type="button"
+          className="upload"
+          value={data.si_photoId}
+          onClick={() => {
+            widgetRef.current.open();
+            handleChange;
+          }}
+        >
+          Upload
+        </button>
+      </div>
+      <div className="PersonalInfo">
+        <input
+          type="checkbox"
+          value="sadg"
+          name="si_personalInfo"
+          onClick={handleChange}
+        />
+        <label>
+          Kişisel verilerimin kullanılmasını,ve korunmasını kabul ediyorum.
+        </label>
+      </div>
     </div>
   );
   {

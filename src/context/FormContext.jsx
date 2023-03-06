@@ -42,6 +42,7 @@ export const FormProvider = ({ children }) => {
     fi_questionThree: "",
     fi_questionFour: "",
     si_photoId: "",
+    si_personalInfo: "",
   });
 
   const handleChange = (e) => {

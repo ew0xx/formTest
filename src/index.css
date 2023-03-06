@@ -10,7 +10,17 @@
   display: none;
   background-color: red;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 .offscreen {
   position: absolute;
   left: -10000px;
@@ -149,7 +159,10 @@ label {
   padding-top: 2px;
   padding-bottom: 8px;
 }
-input,
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
 select,
 textarea {
   -webkit-appearance: none;
@@ -229,6 +242,34 @@ ul {
 }
 .right {
   padding: 10px;
+}
+.successMessage {
+  margin-top: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #195809be;
+}
+.PersonalInfo {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+.upload {
+  width: 100%;
+  border-radius: 10px;
+  height: 50px;
+  border: 1px solid #0a3161;
+  color: #0a3161;
+  cursor: pointer;
+  font-weight: bold;
+}
+.upload:hover {
+  background-color: #0a316169;
+  color: white;
 }
 @media (max-width: 768px) {
   form {

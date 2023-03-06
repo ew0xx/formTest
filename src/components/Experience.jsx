@@ -84,7 +84,6 @@ const Experience = () => {
           id="tradingTime"
           name="fo_tradingTime"
           value={data.fo_tradingTime}
-          onClick={handleChange}
         >
           <button
             type="button"
@@ -96,7 +95,10 @@ const Experience = () => {
             }
             name="fo_tradingTime"
             value="More than 2 years"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             More than 2 years
           </button>
@@ -110,7 +112,10 @@ const Experience = () => {
             }
             name="fo_tradingTime"
             value="Less than 2 years"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Less than 2 years
           </button>
@@ -124,7 +129,10 @@ const Experience = () => {
             }
             name="fo_tradingTime"
             value="Never"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Never
           </button>
@@ -137,7 +145,6 @@ const Experience = () => {
           id="quarter"
           name="fo_quarter"
           value={selectedOption.fo_quarter}
-          onClick={handleChange}
         >
           <label htmlFor="quarter">
             How many times have you traded CFDs pr FX in the past 24 months?
@@ -152,7 +159,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="More than 30 per quarter"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             More than 30 per quarter
           </button>
@@ -166,7 +176,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Less than 30 per quarter"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Less than 30 per quarter
           </button>
@@ -178,7 +191,6 @@ const Experience = () => {
           id="experience"
           name="fo_experience"
           value={data.fo_experience}
-          onClick={handleChange}
         >
           <label htmlFor="experience">
             Do you have any qualification or experience retaling to CFD, FX,
@@ -194,7 +206,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Qualifications"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Qualifications
           </button>
@@ -208,7 +223,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Personal experience"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Personal experience
           </button>
@@ -222,7 +240,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Qualification and Personal experience"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Qualification and Personal experience
           </button>
@@ -236,7 +257,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Neither"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Neither
           </button>
@@ -269,7 +293,6 @@ const Experience = () => {
           id="profession"
           name="fo_profession"
           value={data.fo_profession}
-          onClick={handleChange}
         >
           <label htmlFor="profession">
             Which of the following professional positions have you hold?
@@ -285,7 +308,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Account Manager"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Account Manager
           </button>
@@ -299,7 +325,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Senior Manager"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Senior Manager
           </button>
@@ -313,7 +342,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Market Analyst/Resarcher/Strategist"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Market Analyst / Resarcher / Strategist
           </button>
@@ -327,7 +359,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Educator"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Educator
           </button>
@@ -341,7 +376,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Operations/Back Office"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Operations/Back Office
           </button>
@@ -355,7 +393,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Compliance/Legal"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Compliance/Legal
           </button>
@@ -369,7 +410,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Dealing/Market Risk"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Dealing/Market Risk
           </button>
@@ -381,7 +425,6 @@ const Experience = () => {
           id="knowledge"
           name="fo_knowledge"
           value={data.fo_knowledge}
-          onClick={handleChange}
         >
           <label htmlFor="knowledge">
             Based on trading experience, do you confirm that you have a good
@@ -399,7 +442,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="Yes"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             Yes
           </button>
@@ -413,7 +459,10 @@ const Experience = () => {
                 : "questionButton"
             }
             value="questionFiveB"
-            onClick={handleClick}
+            onClick={(e) => {
+              handleClick(e);
+              handleChange(e);
+            }}
           >
             No
           </button>
@@ -421,7 +470,7 @@ const Experience = () => {
       )}
     </div>
   );
-
+  console.log(data);
   return content;
 };
 export default Experience;

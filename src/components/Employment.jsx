@@ -156,7 +156,7 @@ const Employment = () => {
           <option value="Diversification">Diversification</option>
         </select>
       </div>
-      <div className="flex-col" name="t_risk" onClick={handleChange}>
+      <div className="flex-col" name="t_risk">
         <label htmlFor="risk">
           Please select the degree of risk you are willing to take with the
           assets in this account
@@ -173,7 +173,10 @@ const Employment = () => {
                     : "questionButton full-width"
                 }
                 value="High"
-                onClick={handleClick}
+                onClick={(e) => {
+                  handleClick(e);
+                  handleChange(e);
+                }}
               >
                 High
               </button>
@@ -196,7 +199,10 @@ const Employment = () => {
                     : "questionButton full-width"
                 }
                 value="Moderate"
-                onClick={handleClick}
+                onClick={(e) => {
+                  handleClick(e);
+                  handleChange(e);
+                }}
               >
                 Moderate
               </button>{" "}
@@ -220,7 +226,10 @@ const Employment = () => {
                     : "questionButton full-width"
                 }
                 value="Low"
-                onClick={handleClick}
+                onClick={(e) => {
+                  handleClick(e);
+                  handleChange(e);
+                }}
               >
                 Low
               </button>
@@ -236,7 +245,7 @@ const Employment = () => {
       </div>
     </div>
   );
-
+  console.log(data);
   return content;
 };
 export default Employment;

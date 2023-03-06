@@ -1,5 +1,6 @@
 import useFormContext from "../hooks/useFormContext";
 import React from "react";
+
 const Profile = () => {
   const { data, handleChange } = useFormContext();
 
@@ -314,6 +315,7 @@ const Profile = () => {
           pattern="([A-Za-z])[\w+.]{1,}"
           value={data.f_firstName}
           onChange={handleChange}
+          placeholder="First Name"
         />
       </div>
       <div className="flex-col">
@@ -326,6 +328,7 @@ const Profile = () => {
           pattern="([A-Za-z])[\w+.]{1,}"
           value={data.f_lastName}
           onChange={handleChange}
+          placeholder="Last Name"
         />
       </div>
 
@@ -340,12 +343,13 @@ const Profile = () => {
       />
       <label htmlFor="phone">Mobile phone</label>
       <input
-        type="text"
-        id="phone"
+        type="number"
+        id="f_phone"
         name="f_phone"
         pattern="([0-9]){1,}"
         value={data.f_phone}
         onChange={handleChange}
+        placeholder="Phone Number"
       />
       <label htmlFor="email">Email adress</label>
       <input
@@ -355,10 +359,11 @@ const Profile = () => {
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
         value={data.f_email}
         onChange={handleChange}
+        placeholder="Email Address"
       />
     </div>
   );
-
+  console.log(data);
   return content;
 };
 export default Profile;
