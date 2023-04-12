@@ -12,8 +12,8 @@ const Verification = () => {
     cloudinaryRef.current = window.cloudinary;
     widgetRef.current = cloudinaryRef.current.createUploadWidget(
       {
-        cloudName: "dt2g44so1",
-        uploadPreset: "fqktsdkz",
+        cloudName: "name",
+        uploadPreset: "preset",
       },
       function (error, result) {
         if (result?.event === "success") {
