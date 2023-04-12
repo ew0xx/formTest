@@ -29,7 +29,7 @@ const Form = () => {
       formdata.append(value, data[value]);
     }
 
-    emailjs.send("testing", "template_mwhpjsi", data, "nfj9vTPlxQaKR4fFr").then(
+    emailjs.send("testing", "template", data, "api").then(
       (result) => {
         setSuccess(true);
       },
@@ -38,14 +38,12 @@ const Form = () => {
       }
     );
     fetch(
-      "https://script.google.com/macros/s/AKfycbxVbGPrB-9r-CebOtcF2MvHeWjqn0XLyGxlJg2c4Ci-r5bijiTWRzbmb1Cxw3Z9O1dBZA/exec",
+      "googleDocs",
       {
         method: "POST",
         body: formdata,
       }
     );
-
-    //window.location.href = "https://www.google.com";
   };
 
   const content = (
